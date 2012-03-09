@@ -1,10 +1,10 @@
 [user]
-	name = Travis Dempsey
-	email = dempsey.travis@gmail.com
+	name = Selene Arrazolo
+	email = selene@infochimps.com
 [color]
 	ui = true
 [github]
-	user = kornypoet
+	user = sya
 [alias]
         st = status
 	ci = commit
