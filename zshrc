@@ -4,15 +4,10 @@ for zsh_source in $HOME/.dotfiles/zsh.d/*; do
 done
 
 # Setup rbenv
-# eval "$(rbenv init -)"
-     
-# key bindings
-bindkey '^[[5C' forward-word
-bindkey '^[[5D' backward-word
+eval "$(rbenv init -)"
 
-# Change the definition for shell word navigation 
-export WORDCHARS='*?[]~=&;!#$%^(){}<>'
-
-# Load RVM function
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export CSTN_DIR=$HOME/dev/chimpstation    # the directory holding chimpstation-homebase
+export CSTN_ORG="chimpstation"            # the name of your chef organization
+export CSTN_CLUSTER="ducats"              # the name of the chef cluster for your boxes
+export CSTN_FACET="coolhand"              # the name of the chef facet for your machine
+export CHEF_USER="dlaw"                   # your user name on the chef server
